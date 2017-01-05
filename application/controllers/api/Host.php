@@ -26,7 +26,7 @@ class Host extends Api_Controller {
         Utility::getNumericInArray($setIdArr);
 
         if ($appId === 0) {
-            $obj = $this->config->item(API_ILLEGAL);
+            $obj = $this->config->item(CC_API_APPID_ILLEGAL);
             return $this->outFailure($obj->code, $obj->msg, $obj->extmsg);
         }
 
